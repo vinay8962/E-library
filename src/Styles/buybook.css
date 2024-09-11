@@ -1,0 +1,15 @@
+.buybook-container{
+    width: 100%;
+    height: 300px;
+    
+    /* border: 2px solid black; */
+    text-align: center;
+}
+.buybook-container div {
+    margin-top: 30px;
+}
+.buy-btn button {
+    margin-right: 30px;
+    margin-left: 30px;
+    border: 1px solid black;
+}

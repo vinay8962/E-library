@@ -1,0 +1,145 @@
+/* Default styles for larger screens */
+.category-book-heading {
+    text-align: center;
+}
+
+.book {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+    justify-items: center;
+    margin-top: 50px;
+    margin-left: 22px;
+}
+
+ 
+ 
+ 
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    /* Adjust styles for tablets and smaller screens */
+    .book {
+        grid-template-columns: 1fr 1fr; /* Two columns on tablets */
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+    /* Adjust styles for phones */
+    .book {
+        grid-template-columns: 1fr; /* Single column on phones */
+    }
+
+  
+}
+
+/* Media Query For different screens */
+@media (min-width: 320px) and (max-width: 479px) {
+    /* Define styles for specific screen size range */
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+    /* Define styles for specific screen size range */
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    /* Define styles for specific screen size range */
+}
+
+@media (min-width: 801px) and (max-width: 1281px) {
+    /* Define styles for specific screen size range */
+    .book {
+        grid-template-columns: 1fr 1fr 1fr; /* Two columns on tablets */
+    }
+}
+
+
+
+.cate-card {
+    width: 280px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    height: 360px;
+    border-radius: 15px;
+    padding: 1.5rem;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    &:hover {
+      transform: translateY(20px);
+      &:before {
+        opacity: 1;
+      }
+      .info {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 2;
+      transition: 0.5s;
+      opacity: 0;
+     
+    }
+  }
+  
+  .cate-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+  }
+  
+  .info {
+    position: relative;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s;
+    margin-top: 140px;
+    .info-h1 {
+      margin: 0;
+    }
+    .info-p {
+      letter-spacing: 1px;
+      font-size: 15px;
+      margin-top: 8px;
+    }
+    .info-btn {
+      padding: 0.6rem;
+      outline: none;
+      border: none;
+      border-radius: 3px;
+      background: white;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.4s ease;
+      &:hover {
+        background: dodgerblue;
+        color: white;
+      }
+    }
+  }
+  

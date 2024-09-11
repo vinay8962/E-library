@@ -1,0 +1,163 @@
+.login-container{
+   width: 100%;
+  
+  
+   display: flex;
+   flex-direction: row;
+;
+   
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    z-index:-1; /* Remove this line if it's not going to be a background! */
+  
+}
+
+
+html{
+  min-height:100%;/* make sure it is at least as tall as the viewport */
+  position:relative;
+}
+body{
+  height:100%; /* force the BODY element to match the height of the HTML element */
+}
+
+
+.L-left-container{
+    width: 50%;
+    background-color: rgb(248, 239, 191);
+    
+ }
+ .L-h1{
+     
+   
+    text-align: center;
+ }
+ .L-h3{
+  color:  rgb(131, 128, 128);
+ }
+
+
+
+ 
+ .L-right-container{
+    
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    
+}
+
+.L-form label{
+    font-size: larger;
+   
+    
+    
+      
+}
+.L-form{
+    
+    width: 400px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10%;
+    
+    
+}
+.L-form input{
+   width: 100%;
+     
+      margin-bottom: 20px;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #ccc; /* You can adjust the color and thickness of the outline */
+}
+ 
+
+/* CSS */
+.L-btn{
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin-top: 30px;
+   
+  flex-shrink: 0;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  width: 150px;
+  height: 3rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .9s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.register{
+  margin-top: 30px;
+
+}
+
+.L-btn:hover{
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  border-radius: 50px;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .L-btn {
+    padding: 0 2.6rem;
+  }
+}
+
+.change_content:after {
+    content: "";
+    animation: changetext 8s infinite linear;
+    color: #fa8c31;
+    font-size: 100px;
+    margin-left: 200px;
+  }
+  
+  
+
+
+  @media screen and (min-width:0px) and (max-width:768px) {
+    .L-left-container{
+      display: none;
+      width: auto;
+    }
+
+    .L-right-container{
+      width: auto;
+      margin: 0 auto;
+    }o
+
+    .w-100{
+      overflow: hidden;
+    }
+
+    .L-form{
+      width: auto;
+    }
+  }
+
+  @media screen and (min-width:440px) and (max-width:768px){
+    .L-form {
+      width: 80%;
+    }
+  }
+
+  TypeAnimation{
+    color: #fa8c31;
+  }
+/* RuqHBbhnZyMZJ4W6
+mongodb+srv://techiesvinay:RuqHBbhnZyMZJ4W6@cluster0.hidp3dz.mongodb.net/?retryWrites=true&w=majority */

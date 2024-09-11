@@ -1,0 +1,55 @@
+/* Default styles for larger screens */
+.A-h1 {
+    text-align: center;
+    color: rgb(131, 128, 128);
+}
+.custom-shape-divider-bottom-1705340300 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1705340300 img {
+    position: relative;
+    display: block;
+    width: calc(156% + 1.3px);
+    height: 297px;
+}
+
+.custom-shape-divider-bottom-1705340300 .shape-fill {
+    fill: #FFFFFF;
+}
+.A-p {
+    color: rgb(131, 128, 128);
+    /* width: 800px; */
+    margin-top: 60px;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    justify-items: center;
+    /* margin-left: 250px; */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    /* Adjust styles for tablets and smaller screens */
+    .A-p {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-left: auto; /* Center the text horizontally */
+        margin-right: auto;
+        margin-top: 30px; /* Adjust margin for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust styles for phones */
+    .A-p {
+        width: 90%; /* Adjust width for phones */
+        margin: 0 auto; /* Center the text horizontally */
+        margin-top: 20px; /* Adjust margin for phones */
+    }
+}

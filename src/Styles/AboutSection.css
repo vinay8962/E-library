@@ -1,0 +1,41 @@
+.aboutsection {
+    margin-bottom: 20px;
+    margin-top: 80px;
+    height: auto; /* Change height to auto for responsiveness */
+    background-color: rgba(231, 229, 229, 0.425);
+    padding-top: 40px;
+}
+
+.aboutsection-img {
+    margin-top: -40px;
+    width: 100%; /* Make the image responsive */
+    max-width: 400px; /* Set maximum width for larger screens */
+    height: 400px; /* Maintain aspect ratio for the image */
+}
+@media (max-width: 400px) {
+    /* Apply styles for screens smaller than 768px */
+    .aboutsection {
+        padding-top: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .aboutsection-img {
+        margin-top: 0; /* Remove negative margin for smaller screens */
+        width: 100%; /* Make the image responsive */
+        max-width: none; /* Remove maximum width for smaller screens */
+        
+    }
+}
+
+@media (min-width: 400px) and (max-width: 800px) {
+    /* Apply styles for screens smaller than 768px */
+    .aboutsection {
+        padding-top: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .aboutsection-img {
+        margin-top: 0; /* Remove negative margin for smaller screens */
+        width: 100%; /* Make the image responsive */
+        max-width: none; /* Remove maximum width for smaller screens */
+        height: 426px;
+    }
+}

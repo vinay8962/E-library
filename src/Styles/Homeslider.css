@@ -1,0 +1,105 @@
+.title {
+  position: absolute;
+  top: 200px;
+  left: 30%;
+  transform: translateX(-50%);
+  font-weight: bolder;
+  font-size: 4vw;
+  width: 50%;
+  z-index: 2;
+  color: #ce7852;
+  opacity: 0;
+  animation: outer-left 0.3s 0.7s ease both, fadeIn 0.3s 0.7s ease both;
+}
+ 
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.title-inner {
+  display: inline-block;
+}
+
+@keyframes text-clip {
+  from {
+      clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes outer-left {
+  from {
+      transform: translateY(100%);
+  }
+  to {
+      transform: none;
+  }
+}
+
+@keyframes inner-left {
+  from {
+      transform: translateX(-50%);
+  }
+  to {
+      transform: none;
+  }
+}
+
+.cafe,
+.mozart {
+  animation: outer-left 0.3s 0.7s cubic-bezier(0.5, 0, 0.1, 1) both, fadeIn 0.3s 0.7s ease both;
+}
+
+.title-inner {
+  display: inline-block;
+  animation: inner-left 0.3s 0.7s ease both;
+}
+
+.cafe-inner {
+  display: inline-block;
+  animation: inner-left 0.3s 0.7s ease both, text-clip 0.3s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+
+.mozart-inner {
+  animation: text-clip 0.3s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+
+.cafe > .cafe-inner {
+  display: inline-block;
+}
+
+.mozart {
+  display: inline-block;
+}
+
+.mozart-inner p {
+  font-size: 25px;
+}
+
+.cafe-inner h2 {
+  font-size: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+      font-size: 8vw;
+      left: 50px;
+  }
+
+  .mozart-inner p {
+      font-size: 4vw;
+      margin-left: 10px;
+  }
+
+  .cafe-inner h2 {
+      margin-left: 10px;
+      font-size: 8vw;
+  }
+}
